@@ -26,7 +26,8 @@ function App() {
 
     const data= await res.json();
     console.log("Response:",data);
-    alert(data.message);
+    alert("resolution form submitted successfully");
+    setForm({name:"",email:"",number:"",about:"",issue:""});
   };
 
   return (
