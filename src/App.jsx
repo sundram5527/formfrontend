@@ -18,7 +18,7 @@ function App() {
   const handleSubmit = async (e) =>{
     e.preventDefault();
 
-    const res = await fetch("https://formbackend-production-e841.up.railway.app",{
+    const res = await fetch("https://formbackend-production-e841.up.railway.app/api/users",{
       method:"POST",
       headers:{"Content-Type": "application/json"},
       body: JSON.stringify(form),
